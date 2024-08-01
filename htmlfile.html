@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>게시판 사이트</title>
+    <link rel="stylesheet" href="cssfile.css">
+</head>
+<body>
+    <header>
+        <div class="header-content">
+            <h1>홈페이지</h1>
+            <div class="auth-buttons">
+                <button id="showLogin">로그인</button>
+                <button id="showSignup">회원가입</button>
+            </div>
+        </div>
+    </header>
+    <main>
+        <div id="postForm">
+            <h2>글쓰기</h2>
+            <form>
+                <textarea id="content" placeholder="Write something..." required></textarea>
+                <button type="submit">게시</button>
+            </form>
+        </div>
+        <div id="posts">
+            <h2>게시글</h2>
+        </div>
+    </main>
+
+    <div id="loginPopup" class="popup">
+        <div class="popup-content">
+            <h2>로그인</h2>
+            <form id="login">
+                <input type="text" id="loginUsername" placeholder="Username" required>
+                <input type="password" id="loginPassword" placeholder="Password" required>
+                <button type="submit">로그인</button>
+            </form>
+            <button class="closePopup">닫기</button>
+        </div>
+    </div>
+
+    <div id="signupPopup" class="popup">
+        <div class="popup-content">
+            <h2>회원가입</h2>
+            <form id="signup">
+                <input type="text" id="signupUsername" placeholder="Username" required>
+                <input type="password" id="signupPassword" placeholder="Password" required>
+                <button type="submit">회원가입</button>
+            </form>
+            <button class="closePopup">닫기</button>
+        </div>
+    </div>
+
+    <script src="scriptfile.js"></script>
+</body>
+</html>
